@@ -55,3 +55,5 @@ Le jeu applique quelques règles simples pour rester agréable aux enfants :
 - Niveaux d'âge : 3-5 ans, 6-7 ans, 8-10 ans.
 - Mélange de motricité globale, équilibre, coordination, créativité et calme.
 - Défis coopératifs et bienveillants plutôt que compétitifs.
+- Activités inspirées de jeux de cour, théâtre, mime, danse, yoga enfant,
+  rythme, coopération et retour au calme.
