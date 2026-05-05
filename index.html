@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Jeu de roue colorée développé par Jade, avec gages simples pour enfants de 3 à 10 ans."
+    />
+    <meta name="theme-color" content="#f9c74f" />
+    <title>Roue des Gages</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">Développé par Jade</p>
+        <h1 id="page-title">La Roue des Gages</h1>
+        <p class="intro">
+          Un jeu pour les enfants de 3 à 10 ans : clique sur la roue,
+          découvre une couleur, puis relève un défi simple, drôle et accessible.
+        </p>
+        <p class="made-by">
+          Le jeu va évoluer avec de nouveaux gages. Les idées des enfants, des
+          parents et des animateurs sont les bienvenues pour l'enrichir.
+        </p>
+      </section>
+
+      <section class="game-board" aria-label="Roue de jeu">
+        <div class="wheel-zone">
+          <div class="pointer" aria-hidden="true"></div>
+          <button id="wheel" class="wheel" type="button" aria-label="Faire tourner la roue">
+            <span class="wheel-center">
+              <span>GO</span>
+            </span>
+          </button>
+        </div>
+
+        <aside class="result-card" aria-live="polite">
+          <p class="result-label">Résultat</p>
+          <h2 id="color-name">Prêt à jouer ?</h2>
+          <p id="challenge-text" class="challenge-text">
+            Appuie sur la roue pour lancer le premier gage.
+          </p>
+          <button id="spin-button" class="spin-button" type="button">
+            Tourner la roue
+          </button>
+        </aside>
+      </section>
+
+      <section class="rules">
+        <h2>Couleurs et types de gages</h2>
+        <div id="legend" class="legend"></div>
+      </section>
+
+      <section class="suggestions" aria-labelledby="suggestions-title">
+        <p class="eyebrow">Boîte à idées</p>
+        <h2 id="suggestions-title">Propose un nouveau gage</h2>
+        <p>
+          Tu as une idée de défi rigolo, calme, sportif ou créatif ? Jade pourra
+          ajouter régulièrement de nouveaux gages pour faire grandir le jeu.
+        </p>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

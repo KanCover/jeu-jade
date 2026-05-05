@@ -1,0 +1,17 @@
+{
+  "name": "La Roue des Gages",
+  "short_name": "Roue Gages",
+  "description": "Jeu de roue colorée développé par Jade, avec gages simples pour enfants de 3 à 10 ans.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff8e8",
+  "theme_color": "#f9c74f",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
