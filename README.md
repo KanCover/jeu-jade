@@ -62,6 +62,10 @@ petite application Android wrapper autour du site. Pour un usage familial, la
 PWA suffit généralement ; pour une diffusion large via Galaxy Store ou Google
 Play, il vaut mieux produire un APK/AAB.
 
+Un wrapper Android minimal est disponible dans `android-wrapper/`. Il ouvre le
+jeu publié dans une WebView sous forme de vraie application Android nommée
+`Jade Gages`, plus facile à autoriser dans Samsung Kids qu'une PWA.
+
 ## Modifier les gages
 
 Les couleurs, thèmes et gages sont dans `app.js`, dans le tableau `segments`.
