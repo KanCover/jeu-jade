@@ -43,3 +43,15 @@ fichier `sw.js`.
 ## Modifier les gages
 
 Les couleurs, thèmes et gages sont dans `app.js`, dans le tableau `segments`.
+
+## Bonnes pratiques intégrées
+
+Le jeu applique quelques règles simples pour rester agréable aux enfants :
+
+- Défis courts, simples et adaptables.
+- Aucun gage humiliant ou intrusif.
+- Possibilité de passer son tour.
+- Boutons pour proposer un gage plus facile ou plus dur.
+- Niveaux d'âge : 3-5 ans, 6-7 ans, 8-10 ans.
+- Mélange de motricité globale, équilibre, coordination, créativité et calme.
+- Défis coopératifs et bienveillants plutôt que compétitifs.

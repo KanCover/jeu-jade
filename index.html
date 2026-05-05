@@ -40,13 +40,60 @@
         <aside class="result-card" aria-live="polite">
           <p class="result-label">Résultat</p>
           <h2 id="color-name">Prêt à jouer ?</h2>
+          <div class="player-tools" aria-label="Choisir un niveau de gage">
+            <label for="level-select">Âge / niveau</label>
+            <select id="level-select">
+              <option value="little">3-5 ans : Petit explorateur</option>
+              <option value="middle" selected>6-7 ans : Aventurier</option>
+              <option value="big">8-10 ans : Champion rigolo</option>
+            </select>
+          </div>
           <p id="challenge-text" class="challenge-text">
             Appuie sur la roue pour lancer le premier gage.
           </p>
-          <button id="spin-button" class="spin-button" type="button">
-            Tourner la roue
-          </button>
+          <p id="challenge-note" class="challenge-note">
+            Ici, on peut toujours adapter, aider ou passer son tour.
+          </p>
+          <div class="actions">
+            <button id="spin-button" class="spin-button" type="button">
+              Tourner la roue
+            </button>
+            <button id="skip-button" class="soft-button" type="button">
+              Je passe
+            </button>
+          </div>
+          <div class="adjust-buttons" aria-label="Adapter la difficulté">
+            <button id="easier-button" class="tiny-button" type="button">
+              Plus facile
+            </button>
+            <button id="harder-button" class="tiny-button" type="button">
+              Plus dur
+            </button>
+          </div>
         </aside>
+      </section>
+
+      <section class="best-practices" aria-labelledby="best-practices-title">
+        <p class="eyebrow">Best practices</p>
+        <h2 id="best-practices-title">Un jeu joyeux, sûr et bienveillant</h2>
+        <div class="practice-grid">
+          <article>
+            <h3>Psychologie</h3>
+            <p>On valorise l'essai, jamais la honte. L'enfant peut passer, recommencer ou adapter.</p>
+          </article>
+          <article>
+            <h3>Motricité</h3>
+            <p>Les défis mélangent équilibre, coordination, mouvement global, respiration et calme.</p>
+          </article>
+          <article>
+            <h3>Fun</h3>
+            <p>Imaginaire, animaux, robots, super-héros, mimes et surprises pour créer du rire partagé.</p>
+          </article>
+          <article>
+            <h3>Convivialité</h3>
+            <p>Des gages solo, duo ou groupe, avec coopération et compliments plutôt que compétition.</p>
+          </article>
+        </div>
       </section>
 
       <section class="rules">
