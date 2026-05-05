@@ -21,9 +21,21 @@ hébergeur statique comme GitHub Pages, Netlify ou Vercel.
 
 Option la plus simple sans configuration serveur :
 
-1. Créer un dépôt GitHub.
+1. Créer un dépôt GitHub `KanCover/jeu-jade`.
 2. Envoyer les fichiers du projet dans ce dépôt.
 3. Activer GitHub Pages sur la branche principale.
+
+URL publique attendue :
+
+```text
+https://kancover.github.io/jeu-jade/
+```
+
+Les suggestions peuvent être envoyées via les Issues GitHub :
+
+```text
+https://github.com/KanCover/jeu-jade/issues/new
+```
 
 Le jeu peut aussi fonctionner hors ligne après une première visite grâce au
 fichier `sw.js`.
