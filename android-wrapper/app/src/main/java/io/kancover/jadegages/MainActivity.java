@@ -11,7 +11,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 public class MainActivity extends Activity {
-    private static final String GAME_URL = "https://kancover.github.io/jeu-jade/";
+    private static final String GAME_URL = "file:///android_asset/index.html";
     private WebView webView;
 
     @Override
@@ -27,6 +27,7 @@ public class MainActivity extends Activity {
         settings.setDomStorageEnabled(true);
         settings.setDatabaseEnabled(true);
         settings.setMediaPlaybackRequiresUserGesture(false);
+        settings.setAllowFileAccess(true);
         settings.setLoadWithOverviewMode(true);
         settings.setUseWideViewPort(true);
 
@@ -36,7 +37,7 @@ public class MainActivity extends Activity {
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 String url = request.getUrl().toString();
 
-                if (url.startsWith(GAME_URL)) {
+                if (url.startsWith("file:///android_asset/")) {
                     return false;
                 }
 

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Jeu de roue colorée développé par Jade, avec gages simples pour enfants de 3 à 10 ans."
+    />
+    <meta name="theme-color" content="#f9c74f" />
+    <title>Roue des Gages</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">Développé par Jade</p>
+        <h1 id="page-title">La Roue des Gages</h1>
+        <p class="intro">
+          Un jeu pour les enfants de 3 à 10 ans : clique sur la roue,
+          découvre une couleur, puis relève un défi simple, drôle et accessible.
+        </p>
+        <p class="made-by">
+          Le jeu va évoluer avec de nouveaux gages. Les idées des enfants, des
+          parents et des animateurs sont les bienvenues pour l'enrichir.
+        </p>
+      </section>
+
+      <section class="game-board" aria-label="Roue de jeu">
+        <div class="wheel-zone">
+          <div class="pointer" aria-hidden="true"></div>
+          <button id="wheel" class="wheel" type="button" aria-label="Faire tourner la roue">
+            <span class="wheel-center">
+              <span>GO</span>
+            </span>
+          </button>
+        </div>
+
+        <aside class="result-card" aria-live="polite">
+          <p class="result-label">Résultat</p>
+          <h2 id="color-name">Prêt à jouer ?</h2>
+          <div class="player-tools" aria-label="Choisir un niveau de gage">
+            <label for="level-select">Âge / niveau</label>
+            <select id="level-select">
+              <option value="little">3-5 ans : Petit explorateur</option>
+              <option value="middle" selected>6-7 ans : Aventurier</option>
+              <option value="big">8-10 ans : Champion rigolo</option>
+            </select>
+          </div>
+          <p id="challenge-text" class="challenge-text">
+            Appuie sur la roue pour lancer le premier gage.
+          </p>
+          <p id="challenge-note" class="challenge-note">
+            Ici, on peut toujours adapter, aider ou passer son tour.
+          </p>
+          <div class="actions">
+            <button id="spin-button" class="spin-button" type="button">
+              Tourner la roue
+            </button>
+            <button id="skip-button" class="soft-button" type="button">
+              Je passe
+            </button>
+          </div>
+          <div class="adjust-buttons" aria-label="Adapter la difficulté">
+            <button id="easier-button" class="tiny-button" type="button">
+              Plus facile
+            </button>
+            <button id="harder-button" class="tiny-button" type="button">
+              Plus dur
+            </button>
+          </div>
+        </aside>
+      </section>
+
+      <section class="best-practices" aria-labelledby="best-practices-title">
+        <p class="eyebrow">Best practices</p>
+        <h2 id="best-practices-title">Un jeu joyeux, sûr et bienveillant</h2>
+        <p class="practice-intro">
+          Inspiré des approches internationales du jeu actif : variété,
+          coopération, imagination, autonomie, retour au calme et défis adaptés
+          à l'âge.
+        </p>
+        <div class="practice-grid">
+          <article>
+            <h3>Psychologie</h3>
+            <p>On valorise l'essai, jamais la honte. L'enfant peut passer, recommencer ou adapter.</p>
+          </article>
+          <article>
+            <h3>Motricité</h3>
+            <p>Les défis mélangent équilibre, coordination, mouvement global, respiration et calme.</p>
+          </article>
+          <article>
+            <h3>Fun</h3>
+            <p>Imaginaire, animaux, robots, super-héros, mimes et surprises pour créer du rire partagé.</p>
+          </article>
+          <article>
+            <h3>Convivialité</h3>
+            <p>Des gages solo, duo ou groupe, avec coopération et compliments plutôt que compétition.</p>
+          </article>
+          <article>
+            <h3>Jeux du monde</h3>
+            <p>On mélange cour de récré, théâtre, rythme, yoga enfant, mime et jeux coopératifs.</p>
+          </article>
+          <article>
+            <h3>Autonomie</h3>
+            <p>Les enfants peuvent choisir plus facile, plus dur ou passer : le jeu reste leur espace.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="rules">
+        <h2>Couleurs et types de gages</h2>
+        <div id="legend" class="legend"></div>
+      </section>
+
+      <section class="suggestions" aria-labelledby="suggestions-title">
+        <p class="eyebrow">Boîte à idées</p>
+        <h2 id="suggestions-title">Propose un nouveau gage</h2>
+        <p>
+          Tu as une idée de défi rigolo, calme, sportif ou créatif ? Jade pourra
+          ajouter régulièrement de nouveaux gages pour faire grandir le jeu.
+        </p>
+        <a class="suggestion-link" href="https://github.com/KanCover/jeu-jade/issues/new">
+          Envoyer une suggestion
+        </a>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

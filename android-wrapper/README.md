@@ -1,8 +1,11 @@
 # Jade Gages Android Wrapper
 
-Mini application Android qui affiche le jeu publié sur GitHub Pages dans une
-WebView. C'est plus fiable qu'une PWA pour Samsung Kids, car Samsung Kids liste
-normalement les vraies applications Android installées.
+Mini application Android qui affiche le jeu dans une WebView. C'est plus fiable
+qu'une PWA pour Samsung Kids, car Samsung Kids liste normalement les vraies
+applications Android installées.
+
+Cette version embarque les fichiers HTML/CSS/JS du jeu dans l'APK. Le jeu peut
+donc fonctionner sans navigateur et sans connexion internet.
 
 ## Construire l'APK avec Android Studio
 
@@ -39,7 +42,7 @@ JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home" \
 
 ## Notes
 
-- L'app charge `https://kancover.github.io/jeu-jade/`.
-- Les mises à jour du jeu web sont donc visibles sans reconstruire l'APK.
-- Si l'app doit fonctionner sans internet, il faudra créer une variante offline
-  qui embarque les fichiers HTML/CSS/JS dans `android_asset`.
+- L'app charge `file:///android_asset/index.html`.
+- Après une modification du jeu web, recopie les fichiers dans
+  `app/src/main/assets/`, puis reconstruis l'APK.
+- Les liens externes, comme la suggestion GitHub, peuvent demander internet.
